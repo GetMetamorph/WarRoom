@@ -7,10 +7,11 @@ import android.os.Bundle
 import android.util.Log
 import com.example.warroom.R
 import com.example.warroom.databinding.ActivityRegisterBinding
-import com.github.javafaker.Faker
+import net.datafaker.Faker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import dk.brics.automaton.SpecialOperations.trim
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -27,10 +28,10 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.registerButton.setOnClickListener {
-            val username = binding.usernameInput.text.toString()
-            val email = binding.emailInput.text.toString()
-            val password = binding.passwordInput.text.toString()
-            val confirmPassword = binding.verifPasswordInput.text.toString()
+            val username = binding.usernameInput.text.toString().trim()
+            val email = binding.emailInput.text.toString().trim()
+            val password = binding.passwordInput.text.toString().trim()
+            val confirmPassword = binding.verifPasswordInput.text.toString().trim()
 
             if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
                 binding.alertMessage.text = "Veuillez remplir tous les champs"
@@ -51,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
                 "username" to username,
                 "email" to email,
                 "password" to password,
-                "picture" to faker.avatar().image()
+                "picture" to faker.avatar().image(),
                 )
 
 

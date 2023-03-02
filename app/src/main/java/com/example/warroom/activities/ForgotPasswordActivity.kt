@@ -26,7 +26,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
         }
 
         binding.forgotPasswordButton.setOnClickListener {
-            val email = binding.emailInput.text.toString()
+            val email = binding.emailInput.text.toString().trim()
 
             if (email.isEmpty()) {
                 binding.alertMessage.text = "Veuillez remplir tous les champs"

@@ -2,6 +2,7 @@ package com.example.warroom.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.warroom.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -32,8 +33,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.loginButton.setOnClickListener {
-            val email = binding.mailInput.text.toString()
-            val password = binding.passwordInput.text.toString()
+            val email = binding.mailInput.text.toString().trim()
+            val password = binding.passwordInput.text.toString().trim()
 
             print("loginButton clicked")
 
@@ -45,6 +46,7 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
+                        Toast.makeText(this,"Connexion réussie", Toast.LENGTH_SHORT).show();
                         // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
                         val intent = Intent(this, MainActivity::class.java)
