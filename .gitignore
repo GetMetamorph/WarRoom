@@ -28,3 +28,4 @@ hs_err_pid*
 .idea/*
 app/release
 app/build
+local.properties
