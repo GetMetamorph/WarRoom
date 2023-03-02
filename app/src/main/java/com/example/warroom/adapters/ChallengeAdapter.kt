@@ -1,5 +1,6 @@
 package com.example.warroom.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -7,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.warroom.databinding.ItemChallengeBinding
 import com.example.warroom.models.Challenge
 
-class ChallengeAdapter(val listener: ChallengeItemInterface): Adapter<RecyclerView.ViewHolder>() {
+class ChallengeAdapter(val context: Context, val listener: ChallengeItemInterface): Adapter<RecyclerView.ViewHolder>() {
     private var challenges: List<Challenge>? = null
 
     interface ChallengeItemInterface {
@@ -24,7 +25,7 @@ class ChallengeAdapter(val listener: ChallengeItemInterface): Adapter<RecyclerVi
         val challenge = challenges?.get(viewHolder.adapterPosition)
 
         challenge?.let {
-            viewHolder.itemBinding.challengeTitle.text = challenge.title
+            viewHolder.itemBinding.challengeTitle.text = context.getString(challenge.type.getTitleResId())
             viewHolder.itemBinding.itemChallengeMainLayout.setOnClickListener {
                 this.listener.onClick(challenge)
             }

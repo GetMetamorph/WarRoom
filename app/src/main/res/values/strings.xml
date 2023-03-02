@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">WarRoom</string>
     <string name="challenge_image_description">Challenge image</string>
+    <string name="challenge_sport_title">Sport</string>
+    <string name="challenge_talk_title">Discussion</string>
+    <string name="challenge_intellectual_title">Intellectuel</string>
 </resources>
