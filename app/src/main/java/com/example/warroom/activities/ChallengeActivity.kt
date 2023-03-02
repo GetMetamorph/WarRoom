@@ -56,9 +56,17 @@ class ChallengeActivity: AlertActivity(), ChallengeAdapter.ChallengeItemInterfac
 
     override fun onClick(challenge: Challenge) {
         Log.d("ChallengeItem", "Challenge clicked: ${challenge.type}")
-        this.showFormAlert(this, resources.getString(challenge.type.getTitleResId())) {
+        when(challenge.type) {
+            ChallengeEnum.SPORT -> {
+                this.showFormAlert(this, resources.getString(challenge.type.getTitleResId())) {
 
+                }
+            }
+            else -> {
+
+            }
         }
+
     }
 
     private class ChallengeMarginItemDecoration(val context: Context, val adapter: RecyclerView.Adapter<RecyclerView.ViewHolder>) : RecyclerView.ItemDecoration() {

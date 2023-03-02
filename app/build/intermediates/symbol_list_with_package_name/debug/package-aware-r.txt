@@ -2073,6 +2073,7 @@ dimen disabled_alpha_material_light
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen h1_dimen
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -2724,6 +2725,8 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable challenge_alert_bg
 drawable challenge_form_edit
 drawable dark_orange_bg
+drawable date_ic
+drawable description_ic
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2817,9 +2820,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable question_ic
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user_ic
+font margarineregular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3968,6 +3974,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style H1
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text
