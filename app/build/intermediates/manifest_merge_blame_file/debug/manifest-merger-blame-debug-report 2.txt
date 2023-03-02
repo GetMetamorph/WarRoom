@@ -10,93 +10,268 @@
 9        android:targetSdkVersion="33" />
 9-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.warroom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.warroom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:5:5-33:19
-18        android:allowBackup="true"
-18-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] /Users/etiennepaita/.gradle/caches/transforms-3/9baae2a0a064870b9506522ab355f7bf/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:fullBackupContent="@xml/backup_rules"
-22-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:8:9-54
-23        android:icon="@mipmap/ic_launcher"
-23-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:9:9-43
-24        android:label="@string/app_name"
-24-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:10:9-41
-25        android:roundIcon="@mipmap/ic_launcher_round"
-25-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:11:9-54
-26        android:supportsRtl="true"
-26-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:12:9-35
-27        android:testOnly="true"
-28        android:theme="@style/Theme.WarRoom" >
-28-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:13:9-45
-29        <activity
-29-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:15:9-27:20
-30            android:name="com.example.warroom.activities.MainActivity"
-30-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:16:13-52
-31            android:exported="true" >
-31-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:17:13-36
-32            <intent-filter>
-32-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:18:13-22:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:19:17-69
-33-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:19:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:21:17-77
-35-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:21:27-74
-36            </intent-filter>
-37
-38            <meta-data
-38-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:24:13-26:36
-39                android:name="android.app.lib_name"
-39-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:25:17-52
-40                android:value="" />
-40-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:26:17-33
-41        </activity>
-42        <activity
-42-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:29:9-32:55
-43            android:name="com.example.warroom.activities.ChallengeActivity"
-43-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:30:13-57
-44            android:screenOrientation="portrait"
-44-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:31:13-49
-45            android:windowSoftInputMode="adjustPan" />
-45-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:32:13-52
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-49            android:authorities="com.example.warroom.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/848773e611bbde5d3ec0ec3e63d01c98/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a4f0fb44e9b56370f8c2ed23c9d5d030/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-57        </provider>
-58    </application>
-59
-60</manifest>
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:12:5-79
+13-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:12:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:13:5-67
+14-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:13:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.warroom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.warroom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:5:5-50:19
+23        android:allowBackup="true"
+23-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.10.0-beta01] /Users/etiennepaita/.gradle/caches/transforms-3/3e80bbf5417d783095d37f3fe2ca746f/transformed/core-1.10.0-beta01/AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:enableOnBackInvokedCallback="true"
+27-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:8:9-51
+28        android:fullBackupContent="@xml/backup_rules"
+28-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:9:9-54
+29        android:icon="@mipmap/ic_launcher_war_room"
+29-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:10:9-52
+30        android:label="@string/app_name"
+30-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:11:9-41
+31        android:roundIcon="@mipmap/ic_launcher_war_room_round"
+31-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:12:9-63
+32        android:supportsRtl="true"
+32-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:13:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.WarRoom1" >
+34-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:14:9-46
+35        <activity
+35-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:16:9-28:20
+36            android:name="com.example.warroom.activities.LoginActivity"
+36-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:17:13-53
+37            android:exported="true" >
+37-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:18:13-36
+38            <intent-filter>
+38-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:19:13-23:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:20:17-69
+39-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:20:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:22:17-77
+41-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:22:27-74
+42            </intent-filter>
+43
+44            <meta-data
+44-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:25:13-27:36
+45                android:name="android.app.lib_name"
+45-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:26:17-52
+46                android:value="" />
+46-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:27:17-33
+47        </activity>
+48        <activity
+48-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:30:9-33:55
+49            android:name="com.example.warroom.activities.ChallengeActivity"
+49-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:31:13-57
+50            android:screenOrientation="portrait"
+50-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:32:13-49
+51            android:windowSoftInputMode="adjustPan" />
+51-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:33:13-52
+52        <activity
+52-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:35:9-37:38
+53            android:name="com.example.warroom.activities.WelcomeActivity"
+53-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:36:13-55
+54            android:exported="true" />
+54-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:37:13-36
+55        <activity
+55-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:39:9-41:38
+56            android:name="com.example.warroom.activities.RegisterActivity"
+56-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:40:13-56
+57            android:exported="true" />
+57-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:41:13-36
+58        <activity
+58-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:43:9-45:38
+59            android:name="com.example.warroom.activities.ForgotPasswordActivity"
+59-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:44:13-62
+60            android:exported="true" />
+60-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:45:13-36
+61        <activity
+61-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:47:9-49:38
+62            android:name="com.example.warroom.activities.HomeActivity"
+62-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:48:13-52
+63            android:exported="true" />
+63-->/Users/etiennepaita/Documents/Hackathon/WarRoom/WarRoom/app/src/main/AndroidManifest.xml:49:13-36
+64
+65        <service
+65-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:11:9-17:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:12:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:34:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:13:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:14:13-16:85
+70                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+70-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:15:17-126
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-firestore-ktx:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/c0d617ed254140d9b54b21d8be6df623/transformed/firebase-firestore-ktx-24.4.2/AndroidManifest.xml:16:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-auth-ktx:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/8d1996d9dc95bbcec8100e65e8539460/transformed/firebase-auth-ktx-21.1.0/AndroidManifest.xml:11:13-13:85
+73                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+73-->[com.google.firebase:firebase-auth-ktx:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/8d1996d9dc95bbcec8100e65e8539460/transformed/firebase-auth-ktx-21.1.0/AndroidManifest.xml:12:17-116
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-auth-ktx:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/8d1996d9dc95bbcec8100e65e8539460/transformed/firebase-auth-ktx-21.1.0/AndroidManifest.xml:13:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/515453c8f662a5099189489b32b6faff/transformed/firebase-common-ktx-20.3.0/AndroidManifest.xml:14:13-16:85
+76                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+76-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/515453c8f662a5099189489b32b6faff/transformed/firebase-common-ktx-20.3.0/AndroidManifest.xml:15:17-113
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-common-ktx:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/515453c8f662a5099189489b32b6faff/transformed/firebase-common-ktx-20.3.0/AndroidManifest.xml:16:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:19:13-21:85
+79                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+79-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:20:17-111
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-firestore:24.4.2] /Users/etiennepaita/.gradle/caches/transforms-3/31c51ce894b24a9a334c8ca76cab47c9/transformed/firebase-firestore-24.4.2/AndroidManifest.xml:21:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+82                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+82-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+84        </service>
+85
+86        <activity
+86-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+87            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+87-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+88            android:excludeFromRecents="true"
+88-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+89            android:exported="true"
+89-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+90            android:launchMode="singleTask"
+90-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+91-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+92            <intent-filter>
+92-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+93                <action android:name="android.intent.action.VIEW" />
+93-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+93-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+94
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+95-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+96                <category android:name="android.intent.category.BROWSABLE" />
+96-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+96-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+97
+98                <data
+98-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+99                    android:host="firebase.auth"
+99-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+100                    android:path="/"
+100-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+101                    android:scheme="genericidp" />
+101-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+102            </intent-filter>
+103        </activity>
+104        <activity
+104-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+105            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+105-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+106            android:excludeFromRecents="true"
+106-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+107            android:exported="true"
+107-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+108            android:launchMode="singleTask"
+108-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+109-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+110            <intent-filter>
+110-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+111                <action android:name="android.intent.action.VIEW" />
+111-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+111-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+112
+113                <category android:name="android.intent.category.DEFAULT" />
+113-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+113-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+114                <category android:name="android.intent.category.BROWSABLE" />
+114-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+114-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+115
+116                <data
+116-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+117                    android:host="firebase.auth"
+117-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+118                    android:path="/"
+118-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+119                    android:scheme="recaptcha" />
+119-->[com.google.firebase:firebase-auth:21.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/42e3c7ebdf961aa3975567af7f8df76d/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+120            </intent-filter>
+121        </activity>
+122
+123        <provider
+123-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:25:9-30:39
+124            android:name="com.google.firebase.provider.FirebaseInitProvider"
+124-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:26:13-77
+125            android:authorities="com.example.warroom.firebaseinitprovider"
+125-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:27:13-72
+126            android:directBootAware="true"
+126-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:28:13-43
+127            android:exported="false"
+127-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:29:13-37
+128            android:initOrder="100" />
+128-->[com.google.firebase:firebase-common:20.3.0] /Users/etiennepaita/.gradle/caches/transforms-3/02aca66839a005571f79e7c9d64a790b/transformed/firebase-common-20.3.0/AndroidManifest.xml:30:13-36
+129
+130        <activity
+130-->[com.google.android.gms:play-services-base:18.0.1] /Users/etiennepaita/.gradle/caches/transforms-3/b110f88e811d0fbe18469f1274c848b3/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+131-->[com.google.android.gms:play-services-base:18.0.1] /Users/etiennepaita/.gradle/caches/transforms-3/b110f88e811d0fbe18469f1274c848b3/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-base:18.0.1] /Users/etiennepaita/.gradle/caches/transforms-3/b110f88e811d0fbe18469f1274c848b3/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-base:18.0.1] /Users/etiennepaita/.gradle/caches/transforms-3/b110f88e811d0fbe18469f1274c848b3/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+134
+135        <meta-data
+135-->[com.google.android.gms:play-services-basement:18.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/034c68d4f8f2aad65e64b03e1325e33c/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+136            android:name="com.google.android.gms.version"
+136-->[com.google.android.gms:play-services-basement:18.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/034c68d4f8f2aad65e64b03e1325e33c/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+137            android:value="@integer/google_play_services_version" />
+137-->[com.google.android.gms:play-services-basement:18.1.0] /Users/etiennepaita/.gradle/caches/transforms-3/034c68d4f8f2aad65e64b03e1325e33c/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+138
+139        <provider
+139-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+140            android:name="androidx.startup.InitializationProvider"
+140-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+141            android:authorities="com.example.warroom.androidx-startup"
+141-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+142            android:exported="false" >
+142-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+143            <meta-data
+143-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+144-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+145                android:value="androidx.startup" />
+145-->[androidx.emoji2:emoji2:1.2.0] /Users/etiennepaita/.gradle/caches/transforms-3/e3a236f30ed4f92701ee6b36d93deff6/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a6c0022b1a9f7c48b29c6642834dd0a3/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+147-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a6c0022b1a9f7c48b29c6642834dd0a3/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+148                android:value="androidx.startup" />
+148-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/etiennepaita/.gradle/caches/transforms-3/a6c0022b1a9f7c48b29c6642834dd0a3/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+149        </provider>
+150    </application>
+151
+152</manifest>
