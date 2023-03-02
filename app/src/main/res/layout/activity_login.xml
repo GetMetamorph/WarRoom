@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1A2025">
+    android:background="@color/lighter_red">
 
     <ImageView
         android:contentDescription="@string/bg"
         android:id="@+id/bg_pattern"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg_pattern" />
+        android:src="@drawable/background_image" />
 
     <TextView
         android:layout_marginTop="50dp"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome"
         android:textSize="30sp"
-        android:textColor="#fff"
+        android:textColor="#000"
         app:fontFamily="@font/googlesansbold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:textAlignment="center"
         android:text="@string/login_desc"
         android:textSize="18sp"
-        android:textColor="#fff"
+        android:textColor="#000"
         app:fontFamily="@font/proximaniva"
         app:layout_constraintTop_toBottomOf="@+id/title_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="#fff"
-        android:background="@drawable/rounded_corner"
+        android:background="@color/red"
         app:fontFamily="@font/proximaniva"
         app:layout_constraintTop_toBottomOf="@+id/description_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,24 +77,9 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@color/white"
-        android:background="@drawable/rounded_corner"
+        android:background="@color/red"
         app:fontFamily="@font/proximaniva"
         app:layout_constraintTop_toBottomOf="@+id/mail_input"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <TextView
-        android:id="@+id/alert_message"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:textColor="#ff0000"
-        app:fontFamily="@font/googlesansbold"
-        app:layout_constraintTop_toBottomOf="@+id/password_input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -104,14 +89,31 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="20dp"
+        android:background="@color/darker_red"
         android:text="@string/login_button"
         android:textColor="@color/white"
-        android:background="@drawable/rounded_corner"
-        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        app:fontFamily="@font/googlesansbold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
 
     <Button
         android:id="@+id/register_button"
@@ -120,12 +122,13 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:background="@color/lighter_red"
         android:text="@string/register_button"
-        android:textColor="@color/white"
-        android:background="@drawable/border_button"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
     <TextView
         android:id="@+id/forgot_password_text"
@@ -135,7 +138,7 @@
         android:textAlignment="center"
         android:text="@string/forgot_password"
         android:textSize="15sp"
-        android:textColor="@color/grey_link"
+        android:textColor="@color/black"
         app:fontFamily="@font/proximaniva"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
