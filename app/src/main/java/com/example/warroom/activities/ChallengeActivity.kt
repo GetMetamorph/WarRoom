@@ -14,7 +14,7 @@ import com.example.warroom.databinding.ActivityChallengeBinding
 import com.example.warroom.models.Challenge
 import com.example.warroom.models.ChallengeEnum
 
-class ChallengeActivity: AppCompatActivity(), ChallengeAdapter.ChallengeItemInterface {
+class ChallengeActivity: AlertActivity(), ChallengeAdapter.ChallengeItemInterface {
     private lateinit var binding: ActivityChallengeBinding
     private var challengeAdapter = ChallengeAdapter(this, this)
 
@@ -51,7 +51,9 @@ class ChallengeActivity: AppCompatActivity(), ChallengeAdapter.ChallengeItemInte
 
     override fun onClick(challenge: Challenge) {
         Log.d("ChallengeItem", "Challenge clicked: ${challenge.type}")
-        //TODO("Not yet implemented")
+        this.showFormAlert(this, resources.getString(challenge.type.getTitleResId())) {
+
+        }
     }
 
     private class ChallengeMarginItemDecoration(val context: Context, val adapter: RecyclerView.Adapter<RecyclerView.ViewHolder>) : RecyclerView.ItemDecoration() {
