@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.warroom.R
@@ -63,7 +64,7 @@ class ChallengeActivity: AlertActivity(), ChallengeAdapter.ChallengeItemInterfac
                 }
             }
             else -> {
-
+                Toast.makeText(this,R.string.unavailable_challenge, Toast.LENGTH_SHORT).show()
             }
         }
 
