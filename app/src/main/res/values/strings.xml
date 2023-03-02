@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">WarRoom</string>
+
+    <string name="challenge_title">Choix du combat</string>
+    <string name="challenge_image_description">Challenge image</string>
+    <string name="challenge_sport_title">Sport</string>
+    <string name="challenge_intellectual_title">Intellectuel</string>
+    <string name="challenge_talk_title">Discussion</string>
+    <string name="unavailable_challenge">Fonctionnalité indisponible pour le moment</string>
+
+    <string name="challenge_form_username">Pseudo</string>
+    <string name="challenge_form_username_hint">Pseudo du défié</string>
+    <string name="challenge_form_date">Date</string>
+    <string name="challenge_form_date_hint">04/03/2023</string>
+    <string name="challenge_form_reason">Motif</string>
+    <string name="challenge_form_reason_hint">Motif du litige</string>
+    <string name="challenge_form_description">Description</string>
+    <string name="challenge_form_description_hint">Trash talk</string>
+
     <string name="forgot_password"><u>Mot de passe oublié</u></string>
     <string name="forgot_pwd">Mot de passe oublié</string>
     <string name="desc_forgot_password">Veuillez saisir votre email afin de réinitialiser votre mot de passe</string>
