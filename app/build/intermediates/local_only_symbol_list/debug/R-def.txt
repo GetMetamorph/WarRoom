@@ -23,13 +23,13 @@ id horizontalScrollView
 id horizontalScrollView2
 id horizontalScrollView3
 id profil_image
+id reason
 id receive
 id receiveRequest
 id toolBar
 id user_name
 id waiting
 id waitingRequest
-layout activity_main
 layout recycler_view_welcome
 layout welcome
 mipmap ic_launcher

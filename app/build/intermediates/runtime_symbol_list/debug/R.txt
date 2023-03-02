@@ -3156,6 +3156,7 @@ int id progress_circular 0x7f080159
 int id progress_horizontal 0x7f08015a
 int id radio 0x7f08015b
 int id ratio 0x7f08015c
+int id reason 0x7f080202
 int id receive 0x7f0801fa
 int id receiveRequest 0x7f0801fb
 int id rectangles 0x7f08015d
@@ -3420,7 +3421,6 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
-int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f

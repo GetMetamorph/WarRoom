@@ -24,10 +24,6 @@
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.warroom.app-merged_res-29:/layout_welcome.xml.flat",
-        "source": "com.example.warroom.app-main-31:/layout/welcome.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -38,6 +34,10 @@
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.warroom.app-merged_res-29:/layout_recycler_view_welcome.xml.flat",
+        "source": "com.example.warroom.app-main-31:/layout/recycler_view_welcome.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\.gradle\\daemon\\7.5\\com.example.warroom.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
