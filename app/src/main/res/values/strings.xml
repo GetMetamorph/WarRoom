@@ -10,8 +10,12 @@
     <string name="challenge_talk_title">Discussion</string>
 
     <string name="challenge_form_username">Pseudo</string>
+    <string name="challenge_form_username_hint">Pseudo du défié</string>
     <string name="challenge_form_date">Date</string>
+    <string name="challenge_form_date_hint">04/03/2023</string>
     <string name="challenge_form_reason">Motif</string>
+    <string name="challenge_form_reason_hint">Motif du litige</string>
     <string name="challenge_form_description">Description</string>
+    <string name="challenge_form_description_hint">Trash talk</string>
 
 </resources>

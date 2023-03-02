@@ -1,22 +1,18 @@
 [
     {
-        "merged": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-mergeDebugResources-28:/layout/activity_main.xml",
-        "source": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-main-31:/layout/activity_main.xml"
+        "merged": "com.example.warroom.app-mergeDebugResources-28:/layout/activity_challenge.xml",
+        "source": "com.example.warroom.app-main-31:/layout/activity_challenge.xml"
     },
     {
-        "merged": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-mergeDebugResources-28:/layout/activity_challenge.xml",
-        "source": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-main-31:/layout/activity_challenge.xml"
-    },
-    {
-        "merged": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-mergeDebugResources-28:/layout/item_challenge.xml",
-        "source": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-main-31:/layout/item_challenge.xml"
-    },
-    {
-        "merged": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-mergeDebugResources-28:/layout/alert_challenge_form.xml",
-        "source": "/Users/etiennepaita/.gradle/daemon/7.4/com.example.warroom.app-main-31:/layout/alert_challenge_form.xml"
+        "merged": "com.example.warroom.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.example.warroom.app-main-31:/layout/activity_main.xml"
     },
     {
         "merged": "com.example.warroom.app-mergeDebugResources-28:/layout/alert_challenge_form.xml",
         "source": "com.example.warroom.app-main-31:/layout/alert_challenge_form.xml"
+    },
+    {
+        "merged": "com.example.warroom.app-mergeDebugResources-28:/layout/item_challenge.xml",
+        "source": "com.example.warroom.app-main-31:/layout/item_challenge.xml"
     }
 ]

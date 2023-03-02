@@ -38,7 +38,7 @@ class ChallengeAdapter(val context: Context, val listener: ChallengeItemInterfac
         challenge?.let {
             viewHolder.itemBinding.itemChallengeMainLayout.background = ResourcesCompat.getDrawable(context.resources, it.type.getColorDrawableResId(), null)
             viewHolder.itemBinding.challengeTitle.text = context.getString(challenge.type.getTitleResId())
-            viewHolder.itemBinding.itemChallengeMainLayout.setOnClickListener {
+            viewHolder.itemBinding.itemChallengeButton.setOnClickListener {
                 this.listener.onClick(challenge)
             }
         }

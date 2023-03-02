@@ -4,6 +4,7 @@ package com.example.warroom.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +24,16 @@ public final class ItemChallengeBinding implements ViewBinding {
   public final TextView challengeTitle;
 
   @NonNull
+  public final Button itemChallengeButton;
+
+  @NonNull
   public final ConstraintLayout itemChallengeMainLayout;
 
   private ItemChallengeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView challengeTitle,
-      @NonNull ConstraintLayout itemChallengeMainLayout) {
+      @NonNull Button itemChallengeButton, @NonNull ConstraintLayout itemChallengeMainLayout) {
     this.rootView = rootView;
     this.challengeTitle = challengeTitle;
+    this.itemChallengeButton = itemChallengeButton;
     this.itemChallengeMainLayout = itemChallengeMainLayout;
   }
 
@@ -65,10 +70,16 @@ public final class ItemChallengeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.item_challenge_button;
+      Button itemChallengeButton = ViewBindings.findChildViewById(rootView, id);
+      if (itemChallengeButton == null) {
+        break missingId;
+      }
+
       ConstraintLayout itemChallengeMainLayout = (ConstraintLayout) rootView;
 
       return new ItemChallengeBinding((ConstraintLayout) rootView, challengeTitle,
-          itemChallengeMainLayout);
+          itemChallengeButton, itemChallengeMainLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

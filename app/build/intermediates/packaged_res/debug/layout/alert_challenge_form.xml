@@ -66,6 +66,7 @@
                 android:background="@null"
                 android:inputType="textPersonName"
                 android:singleLine="true"
+                android:hint="@string/challenge_form_username_hint"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"/>
 
@@ -110,6 +111,8 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:singleLine="true"
+                android:inputType="date"
+                android:hint="@string/challenge_form_date_hint"
                 android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"/>
 
@@ -140,7 +143,6 @@
                     android:id="@+id/reason_ic"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-
                     android:src="@drawable/question_ic"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -155,6 +157,7 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:singleLine="true"
+                android:hint="@string/challenge_form_reason_hint"
                 android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"/>
 
@@ -200,6 +203,7 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:singleLine="true"
+                android:hint="@string/challenge_form_description_hint"
                 android:layout_marginEnd="15dp"
                 android:layout_marginStart="15dp"/>
 

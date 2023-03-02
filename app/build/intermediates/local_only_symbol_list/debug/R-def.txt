@@ -42,6 +42,7 @@ id description_edit_text
 id description_ic
 id description_label
 id form_title
+id item_challenge_button
 id item_challenge_main_layout
 id reason_edit_text
 id reason_ic
@@ -58,9 +59,13 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string challenge_form_date
+string challenge_form_date_hint
 string challenge_form_description
+string challenge_form_description_hint
 string challenge_form_reason
+string challenge_form_reason_hint
 string challenge_form_username
+string challenge_form_username_hint
 string challenge_image_description
 string challenge_intellectual_title
 string challenge_sport_title

@@ -3060,6 +3060,7 @@ id info
 id invisible
 id inward
 id italic
+id item_challenge_button
 id item_challenge_main_layout
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3563,9 +3564,13 @@ string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string challenge_form_date
+string challenge_form_date_hint
 string challenge_form_description
+string challenge_form_description_hint
 string challenge_form_reason
+string challenge_form_reason_hint
 string challenge_form_username
+string challenge_form_username_hint
 string challenge_image_description
 string challenge_intellectual_title
 string challenge_sport_title
