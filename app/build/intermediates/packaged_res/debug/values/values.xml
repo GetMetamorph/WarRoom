@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="amp_blue">#005488</color>
+    <color name="amp_dark_blue">#0C2A4B</color>
+    <color name="amp_gray">#60758B</color>
+    <color name="amp_light_gray">#E5E5E5</color>
+    <color name="amp_light_gray_2">#C6D0D9</color>
+    <color name="amp_transparent">#00000000</color>
     <color name="black">#FF000000</color>
+    <color name="blue_bt">#636AF6</color>
+    <color name="grey_link">#AFB8BB</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="textfield_bg">#1E262C</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">WarRoom</string>
-    <style name="Theme.WarRoom" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <string name="bg">bg</string>
+    <string name="default_web_client_id" translatable="false">193733882463-b2sfaucgsvq0km0ut0ais70a4hgfinrc.apps.googleusercontent.com</string>
+    <string name="desc_forgot_password">Veuillez saisir votre email afin de réinitialiser votre mot de passe</string>
+    <string name="desc_register">Veuillez saisir ces différentes informations, afin que vos listes soient sauvegardées.</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="forgot_password"><u>Mot de passe oublié</u></string>
+    <string name="forgot_pwd">Mot de passe oublié</string>
+    <string name="gcm_defaultSenderId" translatable="false">193733882463</string>
+    <string name="google_api_key" translatable="false">AIzaSyDU9S4hsn4UEij6HIF8ZFOOuL12JiGIaLc</string>
+    <string name="google_app_id" translatable="false">1:193733882463:android:01f3c599b55451613f61ea</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDU9S4hsn4UEij6HIF8ZFOOuL12JiGIaLc</string>
+    <string name="google_storage_bucket" translatable="false">warroom-9c8fb.appspot.com</string>
+    <string name="home">Accueil</string>
+    <string name="login_button">Se connecter</string>
+    <string name="login_desc">Veuillez vous connecter ou créer un nouveau compte pour utiliser l’application.</string>
+    <string name="password">Mot de passe</string>
+    <string name="project_id" translatable="false">warroom-9c8fb</string>
+    <string name="register">Inscription</string>
+    <string name="register_button">Créer un nouveau compte</string>
+    <string name="resend_password">Renvoyer mon mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="verif_password">Vérification du mot de passe</string>
+    <string name="welcome">Bienvenue !</string>
+    <style name="Theme.WarRoom1" parent="Theme.AppCompat.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -19,6 +51,10 @@
         <item name="colorOnSecondary">@color/black</item>
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowSplashScreenBackground" ns1:targetApi="s">#fff</item>
+        <item name="android:windowSplashScreenAnimatedIcon" ns1:targetApi="s">
+            @mipmap/ic_launcher_war_room_round
+        </item>
         
     </style>
 </resources>

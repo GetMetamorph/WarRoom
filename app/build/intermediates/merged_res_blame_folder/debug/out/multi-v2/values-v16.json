@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.warroom.app-mergeDebugResources-27:/values-v16/values-v16.xml",
+            "outputFile": "com.example.warroom.app-mergeDebugResources-32:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\efe68ff1ef25ad66a5d730e9a4409014\\transformed\\appcompat-1.6.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\589b6d15aa0e5e7ba075ac16327c128b\\transformed\\appcompat-1.6.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\c4e214f3db030bcb6889a17322dc8cbf\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\2952c315b07003aad09ea62536b01a49\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
