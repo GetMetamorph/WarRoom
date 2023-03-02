@@ -23,11 +23,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/icon_empty"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:scaleType="fitStart"
             android:src="@drawable/cartoon_man_inner_peace"
+            android:background="@color/amp_transparent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -36,17 +39,9 @@
             android:id="@+id/start_fight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
             android:text="Lancer un combat"
             android:textSize="25sp"
-            app:layout_constraintTop_toBottomOf="@+id/icon_empty"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:backgroundTint="#00FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
