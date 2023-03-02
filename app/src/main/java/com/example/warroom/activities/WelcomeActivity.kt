@@ -11,7 +11,7 @@ import com.example.warroom.activities.adapters.RequestReceiveAdapter
 import com.example.warroom.activities.adapters.RequestWaitingAdapter
 
 
-class Welcome : AppCompatActivity() {
+class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.welcome)
@@ -37,7 +37,6 @@ class Welcome : AppCompatActivity() {
         list_game_receive.layoutManager = horizontalLayoutManagerReceive
 
         // --------------------//
-
         val horizontalLayoutManagerWaiting = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         val list_game_waiting = findViewById<View>(R.id.waitingRequest) as RecyclerView

@@ -49,7 +49,9 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(this,"Connexion réussie", Toast.LENGTH_SHORT).show();
                         // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
+                    
                         val intent = Intent(this, HomeActivity::class.java)
+                        
                         startActivity(intent)
                         finish()
                     } else {
