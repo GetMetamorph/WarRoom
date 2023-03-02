@@ -51,7 +51,6 @@ class RegisterActivity : AppCompatActivity() {
             val user = hashMapOf(
                 "username" to username,
                 "email" to email,
-                "password" to password,
                 "picture" to faker.avatar().image(),
                 )
 
