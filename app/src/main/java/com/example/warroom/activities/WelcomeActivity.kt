@@ -37,7 +37,6 @@ class WelcomeActivity : AppCompatActivity() {
         list_game_receive.layoutManager = horizontalLayoutManagerReceive
 
         // --------------------//
-
         val horizontalLayoutManagerWaiting = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         val list_game_waiting = findViewById<View>(R.id.waitingRequest) as RecyclerView
