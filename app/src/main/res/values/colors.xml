@@ -17,7 +17,15 @@
     <color name="dark_orange">#F8DE65</color>
     <color name="light_blue">#FFBBAB</color>
     <color name="green">#00C092</color>
-    <!--<color name="dark_orange">#f3713d</color>
-    <color name="light_blue">#c7e9f5</color>
-    <color name="green">#4ebc1c</color>-->
+
+
+    <color name="textfield_bg">#1E262C</color>
+    <color name="blue_bt">#636AF6</color>
+    <color name="grey_link">#AFB8BB</color>
+    <color name="amp_blue">#005488</color>
+    <color name="amp_dark_blue">#0C2A4B</color>
+    <color name="amp_gray">#60758B</color>
+    <color name="amp_light_gray">#E5E5E5</color>
+    <color name="amp_light_gray_2">#C6D0D9</color>
+    <color name="amp_transparent">#00000000</color>
 </resources>

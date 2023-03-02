@@ -27,4 +27,6 @@ hs_err_pid*
 .gradle/
 .idea/*
 app/release
+app/build
+
 local.properties
