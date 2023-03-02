@@ -16,4 +16,6 @@
     <string name="username">Nom d\'utilisateur</string>
     <string name="verif_password">Vérification du mot de passe</string>
     <string name="home">Accueil</string>
+    <string name="accept">Accepter</string>
+    <string name="refuse">Refuser</string>
 </resources>
