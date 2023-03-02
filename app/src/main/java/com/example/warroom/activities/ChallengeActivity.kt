@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -49,6 +50,7 @@ class ChallengeActivity: AppCompatActivity(), ChallengeAdapter.ChallengeItemInte
     }
 
     override fun onClick(challenge: Challenge) {
+        Log.d("ChallengeItem", "Challenge clicked: ${challenge.type}")
         //TODO("Not yet implemented")
     }
 
