@@ -27,7 +27,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.WarRoom" >
         <activity
-            android:name="com.example.warroom.activities.MainActivity"
+            android:name="com.example.warroom.activities.Welcome"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
