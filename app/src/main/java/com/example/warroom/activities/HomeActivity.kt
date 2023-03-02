@@ -1,5 +1,6 @@
 package com.example.warroom.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -15,13 +16,15 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
         this.configureToolbar()
         this.setUpUI()
+
     }
 
     public override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_activity_home, menu)
         return true
     }
-
+    
+    
     private fun configureToolbar() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -33,5 +36,5 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    
+
 }
