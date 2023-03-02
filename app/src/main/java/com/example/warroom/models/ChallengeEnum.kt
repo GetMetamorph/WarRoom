@@ -20,4 +20,18 @@ enum class ChallengeEnum {
             }
         }
     }
+
+    fun getColorDrawableResId(): Int {
+        return when(this) {
+            TALK -> {
+                R.drawable.light_blue_bg
+            }
+            SPORT -> {
+                R.drawable.dark_orange_bg
+            }
+            INTELLECTUAL -> {
+                R.drawable.green_bg
+            }
+        }
+    }
 }

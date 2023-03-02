@@ -13,4 +13,11 @@
     <color name="red_edit_ic">#CB5151</color>
     <color name="pink_33">#33FF5F72</color>
     <color name="transparent">#00000000</color>
+    <color name="light_orange">#ffa96a</color>
+    <color name="dark_orange">#F8DE65</color>
+    <color name="light_blue">#FFBBAB</color>
+    <color name="green">#00C092</color>
+    <!--<color name="dark_orange">#f3713d</color>
+    <color name="light_blue">#c7e9f5</color>
+    <color name="green">#4ebc1c</color>-->
 </resources>

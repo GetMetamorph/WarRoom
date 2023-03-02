@@ -2,6 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="blue_gradient">#284D8E</color>
+    <color name="dark_orange">#F8DE65</color>
+    <color name="green">#00C092</color>
+    <color name="light_blue">#FFBBAB</color>
+    <color name="light_orange">#ffa96a</color>
     <color name="pink">#FF5F72</color>
     <color name="pink_33">#33FF5F72</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -23,6 +27,7 @@
     <string name="challenge_intellectual_title">Intellectuel</string>
     <string name="challenge_sport_title">Sport</string>
     <string name="challenge_talk_title">Discussion</string>
+    <string name="challenge_title">Choix du combat</string>
     <style name="Theme.WarRoom" parent="Theme.MaterialComponents.Light.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

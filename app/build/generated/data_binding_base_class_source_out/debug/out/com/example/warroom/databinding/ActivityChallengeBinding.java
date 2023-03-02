@@ -4,7 +4,6 @@ package com.example.warroom.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,21 +20,12 @@ public final class ActivityChallengeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout challengeHeader;
-
-  @NonNull
   public final RecyclerView challengeRecyclerview;
 
-  @NonNull
-  public final TextView challengeTitle;
-
   private ActivityChallengeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout challengeHeader, @NonNull RecyclerView challengeRecyclerview,
-      @NonNull TextView challengeTitle) {
+      @NonNull RecyclerView challengeRecyclerview) {
     this.rootView = rootView;
-    this.challengeHeader = challengeHeader;
     this.challengeRecyclerview = challengeRecyclerview;
-    this.challengeTitle = challengeTitle;
   }
 
   @Override
@@ -65,26 +55,13 @@ public final class ActivityChallengeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.challenge_header;
-      ConstraintLayout challengeHeader = ViewBindings.findChildViewById(rootView, id);
-      if (challengeHeader == null) {
-        break missingId;
-      }
-
       id = R.id.challenge_recyclerview;
       RecyclerView challengeRecyclerview = ViewBindings.findChildViewById(rootView, id);
       if (challengeRecyclerview == null) {
         break missingId;
       }
 
-      id = R.id.challenge_title;
-      TextView challengeTitle = ViewBindings.findChildViewById(rootView, id);
-      if (challengeTitle == null) {
-        break missingId;
-      }
-
-      return new ActivityChallengeBinding((ConstraintLayout) rootView, challengeHeader,
-          challengeRecyclerview, challengeTitle);
+      return new ActivityChallengeBinding((ConstraintLayout) rootView, challengeRecyclerview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

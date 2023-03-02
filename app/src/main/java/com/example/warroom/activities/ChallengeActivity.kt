@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
+import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -39,14 +40,18 @@ class ChallengeActivity: AlertActivity(), ChallengeAdapter.ChallengeItemInterfac
         setUpViewModel()
     }
 
+
     private fun setUpUI() {
-        binding.challengeTitle.text = "Challenges"
+        //binding.challengeTitle.text = resources.getString(R.string.challenge_title)
         binding.challengeRecyclerview.adapter = challengeAdapter
     }
 
     private fun setUpViewModel() {
-        binding.challengeRecyclerview.addItemDecoration(ChallengeMarginItemDecoration(this, challengeAdapter))
+        //binding.challengeRecyclerview.addItemDecoration(ChallengeMarginItemDecoration(this, challengeAdapter))
         challengeAdapter.setUpChallenges(testList)
+        val h = resources.displayMetrics.heightPixels  //binding.challengeHeader.height
+        Log.d("ChallengeActivity", "recyclerview height: $h")
+        challengeAdapter.setAttachedRecyclerViewHeight(h)
     }
 
     override fun onClick(challenge: Challenge) {

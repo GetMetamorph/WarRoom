@@ -1318,6 +1318,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color dark_orange
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1364,8 +1365,11 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_blue
+color light_orange
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2719,12 +2723,14 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable challenge_alert_bg
 drawable challenge_form_edit
+drawable dark_orange_bg
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dialog_rounded_shape
+drawable green_bg
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -2739,7 +2745,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
-drawable item_challenge_rounded_corner
+drawable light_blue_bg
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2925,7 +2931,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id challenge_header
 id challenge_recyclerview
 id challenge_title
 id challenges_button
@@ -3559,6 +3564,7 @@ string challenge_image_description
 string challenge_intellectual_title
 string challenge_sport_title
 string challenge_talk_title
+string challenge_title
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
