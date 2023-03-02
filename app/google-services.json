@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193733882463",
+    "project_id": "warroom-9c8fb",
+    "storage_bucket": "warroom-9c8fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193733882463:android:01f3c599b55451613f61ea",
+        "android_client_info": {
+          "package_name": "com.example.warroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193733882463-b2sfaucgsvq0km0ut0ais70a4hgfinrc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU9S4hsn4UEij6HIF8ZFOOuL12JiGIaLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193733882463-b2sfaucgsvq0km0ut0ais70a4hgfinrc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
