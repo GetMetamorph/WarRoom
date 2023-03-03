@@ -23,15 +23,15 @@ class UserViewModel: ViewModel() {
                     .whereEqualTo("username", username)
                     .get()
                     .addOnSuccessListener { documents ->
-                        for (document in documents) {
-                            Log.d("UserViewModel", "${document.id} => ${document.data}")
-                        }
+                        _userAvailable.value = !documents.isEmpty
                     }
                     .addOnFailureListener { exception ->
                         Log.d("UserViewModelError", "Error getting documents: ", exception)
+                        _userAvailable.value = false
                     }
             }catch (e: Exception){
                 Log.d("UserViewModelError", "${e.message}")
+                _userAvailable.value = false
             }
         }
     }

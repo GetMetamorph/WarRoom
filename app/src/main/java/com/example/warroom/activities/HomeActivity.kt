@@ -14,23 +14,23 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         this.configureToolbar()
-        this.setUpUIListener()
+        this.setUpUI()
     }
 
     public override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_activity_home, menu)
         return true
     }
-    
-    
+
     private fun configureToolbar() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
     }
 
-    private fun setUpUIListener() {
+    private fun setUpUI() {
         binding.iconEmpty.setOnClickListener {
-            startActivity(ChallengeActivity.newIntent(this))
+            val intent = ChallengeActivity.newIntent(this)
+            startActivity(intent)
         }
     }
     
