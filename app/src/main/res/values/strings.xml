@@ -9,13 +9,23 @@
     <string name="unavailable_challenge">Fonctionnalité indisponible pour le moment</string>
 
     <string name="challenge_form_username">Pseudo</string>
-    <string name="challenge_form_username_hint">Pseudo du défié</string>
+    <string name="challenge_form_username_hint">Pseudo adversaire</string>
     <string name="challenge_form_date">Date</string>
     <string name="challenge_form_date_hint">04/03/2023</string>
     <string name="challenge_form_reason">Motif</string>
     <string name="challenge_form_reason_hint">Motif du litige</string>
     <string name="challenge_form_description">Description</string>
     <string name="challenge_form_description_hint">Trash talk</string>
+
+    <string name="sport_challenge_form_title">Sport Challenge</string>
+    <string name="sport_challenge_form_message">En attente du partenaire…</string>
+    <string name="sport_challenge_form_validate_button">Retour</string>
+
+    <string name="sport_challenge_receiver_win">T\'as gagné !</string>
+    <string name="sport_challenge_receiver_lose">Aah la lose !</string>
+
+    <string name="challenge_form_wrong_pseudo">Cet adversaire n\'existe pas</string>
+    <string name="challenge_form_wrong_date_fomat">Le format de la date n\'est pas valide</string>
 
     <string name="forgot_password"><u>Mot de passe oublié</u></string>
     <string name="forgot_pwd">Mot de passe oublié</string>
@@ -33,4 +43,7 @@
     <string name="username">Nom d\'utilisateur</string>
     <string name="verif_password">Vérification du mot de passe</string>
     <string name="home">Accueil</string>
+    <string name="sport_challenge_title">Défi : WorkOut !</string>
+    <string name="sport_challenge_desc">Vous avez 15 secondes pour faire un maximum de SQUAT !</string>
+    <string name="sport_challenge_instruction">TAP TON ECRAN</string>
 </resources>

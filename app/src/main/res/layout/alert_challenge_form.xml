@@ -209,10 +209,11 @@
 
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/valid_form_button"
             android:layout_gravity="center"
             android:text="Valider"
+            android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
