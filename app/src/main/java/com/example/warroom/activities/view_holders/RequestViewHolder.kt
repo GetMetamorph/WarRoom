@@ -17,14 +17,14 @@ class RequestViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 
     fun bindValue(request: Request) {
-        user_name.text = "" //TODO :request.user_name
+        //user_name.text = "" //TODO :request.user_name
         category.text = request.name
     }
 
     fun openPage(request: Request, context: Context){
         v.setOnClickListener {
             //if()
-            val intent = Intent(context, DetailSendActivity::class.java)
+            val intent = DetailSendActivity.newIntent(context, request)
             context.startActivity(intent)
             //else if
             //else
