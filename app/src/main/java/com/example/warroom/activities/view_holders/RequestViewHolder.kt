@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.warroom.R
 import com.example.warroom.activities.Request
 
-class RequestAcceptedViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+class RequestViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val user_name: TextView = view.findViewById(R.id.user_name)
     val category: TextView = view.findViewById(R.id.category)
     val description: TextView = view.findViewById(R.id.description)

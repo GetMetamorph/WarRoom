@@ -14,7 +14,7 @@
         android:theme="@style/Theme.WarRoom1"
         tools:targetApi="33">
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,9 +26,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.Welcome"
-            android:exported="true"/>
+
         <activity
             android:name=".activities.RegisterActivity"
             android:exported="true">
