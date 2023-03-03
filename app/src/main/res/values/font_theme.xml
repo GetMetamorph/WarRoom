@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="H1">
+        <item name="android:fontFamily">@font/margarineregular</item>
+        <item name="fontFamily">@font/margarineregular</item>
+        <item name="android:textSize">@dimen/h1_dimen</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="H2">
+        <item name="android:fontFamily">@font/margarineregular</item>
+        <item name="fontFamily">@font/margarineregular</item>
+        <item name="android:textSize">@dimen/h2_dimen</item>
+    </style>
+</resources>

@@ -9,14 +9,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_gradient">#284D8E</color>
     <color name="pink">#FF5F72</color>
-    <color name="red_edit">#FC5E5E</color>
-    <color name="red_edit_ic">#CB5151</color>
+    <color name="red_edit">#F89876</color>
+    <color name="red_edit_ic">#FB8960</color>
     <color name="pink_33">#33FF5F72</color>
     <color name="transparent">#00000000</color>
     <color name="light_orange">#ffa96a</color>
     <color name="dark_orange">#F8DE65</color>
     <color name="light_blue">#FFBBAB</color>
     <color name="green">#00C092</color>
+
+
     <color name="textfield_bg">#1E262C</color>
     <color name="blue_bt">#636AF6</color>
     <color name="grey_link">#AFB8BB</color>
