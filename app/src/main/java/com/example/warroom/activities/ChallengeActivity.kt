@@ -85,8 +85,8 @@ class ChallengeActivity: AppCompatActivity(), ChallengeAdapter.ChallengeItemInte
     }
 
     private fun setUpUserViewModelObservers() {
-        userViewModel.userAvailable.observe(this@ChallengeActivity, Observer { user ->
-            user?.let {
+        userViewModel.userAvailable.observe(this@ChallengeActivity, Observer { userId ->
+            userId?.let {
                 this.alertDialogView?.dismiss()
                 val intent = SportChallengeActivity.newIntent(this, it)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
