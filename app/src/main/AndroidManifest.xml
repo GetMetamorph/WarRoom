@@ -41,6 +41,16 @@
             android:name=".activities.HomeActivity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".activities.DetailSendActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activities.DetailReceiveActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
