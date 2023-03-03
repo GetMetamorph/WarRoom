@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1A2025">
+    android:background="@color/red_edit_ic">
 
 
     <TextView
@@ -42,7 +42,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/username"
         android:textAlignment="center"
@@ -77,49 +77,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/password_input_layout"
-        app:layout_constraintTop_toBottomOf="@+id/email_input">
-
-        <EditText
-            android:id="@+id/password_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:hint="@string/password"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            android:autofillHints="emailAddress"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textColor="@color/white"
-            app:fontFamily="@font/proximaniva"
-            android:background="@drawable/button_password_bg"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <ImageView
-            android:id="@+id/icon_close"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/password_input"
-            android:padding="20dp"
-            />
-
-    </RelativeLayout>
-
     <EditText
-        android:id="@+id/verif_password_input"
+        android:id="@+id/password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:hint="@string/verif_password"
+        android:hint="@string/password"
         android:textAlignment="center"
         android:textColorHint="@color/white"
         android:inputType="textPassword"
@@ -129,20 +94,55 @@
         android:background="@drawable/rounded_corner"
         app:fontFamily="@font/proximaniva"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/email_input"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_input">
+
+        <EditText
+            android:id="@+id/verif_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/verif_password"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:autofillHints="emailAddress"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            app:fontFamily="@font/proximaniva"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/verif_password_input"
+            android:padding="20dp"
+            />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/register_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/rounded_corner"
+        android:background="@drawable/rounded_corner_button"
         android:text="@string/register"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/verif_password_input"
+        app:layout_constraintTop_toBottomOf="@+id/alert_message"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -157,7 +157,7 @@
         android:padding="10dp"
         android:textColor="@color/white"
         app:fontFamily="@font/googlesansbold"
-        app:layout_constraintTop_toBottomOf="@+id/verif_password_input"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
