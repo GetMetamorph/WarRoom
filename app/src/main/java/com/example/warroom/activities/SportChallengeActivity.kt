@@ -72,7 +72,7 @@ class SportChallengeActivity : AppCompatActivity() {
         binding.sportChallengeButton.setOnClickListener {
             if (!challengeStarted){
                 challengeStarted = true
-                countDownTimer = object : CountDownTimer(15000, 1000) {
+                countDownTimer = object : CountDownTimer(10000, 1000) {
                     override fun onTick(millisUntilFinished: Long) {
                         timeLeft = millisUntilFinished
                         binding.sportChallengeDesc.text = "TIMER : ${timeLeft / 1000}"
