@@ -75,6 +75,7 @@ class SportChallengeActivity : AppCompatActivity() {
                             "receiver_score" to receiver_score,
                             "sender_id" to sender_id,
                             "sender_score" to sender_score,
+                            "completed" to false
                         )
 
                         db.collection("challenges")
@@ -104,53 +105,5 @@ class SportChallengeActivity : AppCompatActivity() {
             playerIsUp = !playerIsUp
             Log.d("Click",  "$playerScore")
         }
-
-        /*val animator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 1000
-            repeatMode = ValueAnimator.REVERSE
-            repeatCount = ValueAnimator.INFINITE
-            addUpdateListener { animation ->
-                for (i in 0 until 5) {
-                    val offset = Math.sin(animation.animatedValue as Float * Math.PI + i * Math.PI / 2).toFloat() * 10
-                    binding.sportChallengeDesc.text = spannableString.apply {
-                        setSpan(
-                            VerticalOffsetSpan(offset),
-                            str.indexOf("SQUAT"[i]),
-                            str.indexOf("SQUAT"[i]) + 1,
-                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                        )
-                    }
-                }
-            }
-        }
-        animator.start()*/
     }
 }
-
-/*class VerticalOffsetSpan(private val offsetY: Float) : ReplacementSpan() {
-
-    override fun getSize(
-        paint: Paint,
-        text: CharSequence?,
-        start: Int,
-        end: Int,
-        fm: Paint.FontMetricsInt?
-    ): Int {
-        return paint.measureText(text, start, end).toInt()
-    }
-
-    override fun draw(
-        canvas: Canvas,
-        text: CharSequence?,
-        start: Int,
-        end: Int,
-        x: Float,
-        top: Int,
-        y: Int,
-        bottom: Int,
-        paint: Paint
-    ) {
-        canvas.drawText(text!!, start, end, x, y + offsetY, paint)
-    }
-}
-*/
