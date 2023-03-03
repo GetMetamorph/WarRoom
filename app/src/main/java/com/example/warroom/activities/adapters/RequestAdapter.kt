@@ -1,16 +1,18 @@
 package com.example.warroom.activities.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.warroom.R
 import com.example.warroom.activities.Request
-import com.example.warroom.activities.view_holders.RequestAcceptedViewHolder
+import com.example.warroom.activities.view_holders.RequestViewHolder
 
-class RequestAcceptedAdapter(val values: List<Request>) : RecyclerView.Adapter<RequestAcceptedViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RequestAcceptedViewHolder {
+class RequestAdapter(val values: List<Request>, val context: Context) : RecyclerView.Adapter<RequestViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RequestViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return RequestAcceptedViewHolder(inflater.inflate(
+        return RequestViewHolder(inflater.inflate(
             R.layout.recycler_view_welcome, parent, false))
     }
 
@@ -18,7 +20,8 @@ class RequestAcceptedAdapter(val values: List<Request>) : RecyclerView.Adapter<R
         return values.size
     }
 
-    override fun onBindViewHolder(holder: RequestAcceptedViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RequestViewHolder, position: Int) {
         holder.bindValue(values[position])
+        holder.openPage(values[position], context)
     }
 }

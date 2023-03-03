@@ -2,4 +2,5 @@
 <resources>
     <dimen name="challenges_item_margin">10dp</dimen>
     <dimen name="h1_dimen">40sp</dimen>
+    <dimen name="h2_dimen">22sp</dimen>
 </resources>
