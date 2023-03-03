@@ -34,7 +34,7 @@
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name=".activities.WelcomeActivity"
+            android:name=".activities.Welcome"
             android:exported="true"/>
 
         <activity
@@ -52,9 +52,19 @@
         <activity
             android:name=".activities.SportChallengeActivity"
             android:exported="true"/>
-            
+
         <activity
             android:name=".activities.HomeActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activities.DetailSendActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activities.DetailReceiveActivity"
             android:exported="true"/>
     </application>
 
