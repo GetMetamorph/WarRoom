@@ -17,8 +17,8 @@ class RequestViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 
     fun bindValue(request: Request) {
-        user_name.text = request.user_name
-        category.text = request.category
+        user_name.text = "" //TODO :request.user_name
+        category.text = request.name
     }
 
     fun openPage(request: Request, context: Context){

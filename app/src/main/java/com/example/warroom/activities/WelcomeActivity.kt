@@ -20,27 +20,6 @@ class Welcome : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.welcome)
 
-        // ---------------------//
-        val horizontalLayoutManagerReceive = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
-        val list_game_receive = findViewById<View>(R.id.receiveRequest) as RecyclerView
-
-        var requests_receive = Request.createRequest()
-
-        val adapter_receive = RequestAdapter(requests_receive, this)
-        list_game_receive.adapter = adapter_receive
-        list_game_receive.layoutManager = horizontalLayoutManagerReceive
-
-
-        // --------------------//
-        val horizontalLayoutManagerWaiting = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-
-        val list_game_waiting = findViewById<View>(R.id.waitingRequest) as RecyclerView
-
-        var requests_waiting = Request.createRequest()
-
-        val adapter_waiting = RequestAdapter(requests_waiting, this)
-        list_game_waiting.adapter = adapter_waiting
-        list_game_waiting.layoutManager = horizontalLayoutManagerWaiting
     }
 }
