@@ -17,9 +17,12 @@
     <string name="challenge_form_description">Description</string>
     <string name="challenge_form_description_hint">Trash talk</string>
 
-    <string name="sport_challenge_form_title">Trash talk</string>
-    <string name="sport_challenge_form_message">Trash talk</string>
-    <string name="sport_challenge_form_validate_button">Trash talk</string>
+    <string name="sport_challenge_form_title">Sport Challenge</string>
+    <string name="sport_challenge_form_message">En attente du partenaire…</string>
+    <string name="sport_challenge_form_validate_button">Retour</string>
+
+    <string name="sport_challenge_receiver_win">T\'as gagné !</string>
+    <string name="sport_challenge_receiver_lose">Aah la lose !</string>
 
     <string name="challenge_form_wrong_pseudo">Cet adversaire n\'existe pas</string>
     <string name="challenge_form_wrong_date_fomat">Le format de la date n\'est pas valide</string>

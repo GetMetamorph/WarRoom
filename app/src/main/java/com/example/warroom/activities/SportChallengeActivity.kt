@@ -2,6 +2,7 @@ package com.example.warroom.activities
 
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -14,8 +15,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.example.warroom.R
 import com.example.warroom.databinding.ActivitySportChallengeBinding
+import com.example.warroom.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -33,7 +36,18 @@ class SportChallengeActivity : AppCompatActivity() {
     private lateinit var mediaPlayerUp : MediaPlayer
     private lateinit var mediaPlayerDown : MediaPlayer
     private lateinit var mediaPlayer : MediaPlayer
+    private var challengeStarted = false
+    private var playerIsUp = true
+    private var playerScore = 0
 
+
+    companion object {
+        private var opponentUser: User? = null
+        fun newIntent(context: Context, user: User? = null): Intent {
+            opponentUser = user
+            return Intent(context, SportChallengeActivity::class.java)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -54,11 +68,6 @@ class SportChallengeActivity : AppCompatActivity() {
 
 
         val spannableString = SpannableString(str)
-        var challengeStarted = false
-        var playerIsUp = true
-        var playerScore = 0
-
-
 
         binding.sportChallengeButton.setOnClickListener {
             if (!challengeStarted){
@@ -73,8 +82,10 @@ class SportChallengeActivity : AppCompatActivity() {
                         binding.sportChallengeDesc.text = "TIMER : 0"
                         binding.sportChallengeButton.visibility = android.view.View.GONE
 
+                        showEndOfChallengeSenderPopUp()
+
                         val name = "Sport Challenge"
-                        val receiver_id = null
+                        val receiver_id = opponentUser?.uid
                         val receiver_score = null
                         val sender_id = auth.currentUser?.uid
                         val sender_score = playerScore
@@ -97,8 +108,6 @@ class SportChallengeActivity : AppCompatActivity() {
                                 Log.w(ContentValues.TAG, "Error adding document", e)
                             }
 
-
-                        showEndOfChallengeSenderPopUp()
 
                     }
                 }.start()
@@ -172,11 +181,15 @@ class SportChallengeActivity : AppCompatActivity() {
         }
 
         alertTitle?.let {
-            it.text = resources.getString(R.string.sport_challenge_form_title)
+            it.text = "Score : $playerScore"
         }
 
         alertMessage?.let {
             it.text = resources.getString(R.string.sport_challenge_form_message)
+        }
+
+        alertImage?.let {
+            Glide.with(this).load("https://media.giphy.com/media/tXL4FHPSnVJ0A/giphy.gif?cid=ecf05e47g7lkn0lqavduez7t1r6uxr160bz8441a6vf6f5b4&rid=giphy.gif&ct=g").into(it);
         }
 
         alertdialogView.show()
@@ -207,15 +220,15 @@ class SportChallengeActivity : AppCompatActivity() {
         }
 
         alertTitle?.let {
-            it.text = resources.getString(R.string.sport_challenge_form_title)
+            it.text = resources.getString(R.string.sport_challenge_receiver_win)
         }
 
         alertReceiverResult?.let {
-            it.text = resources.getString(R.string.sport_challenge_form_message)
+            it.text = "Ton score : $playerScore"
         }
 
         alertSenderResult?.let {
-            it.text = resources.getString(R.string.sport_challenge_form_message)
+            it.text = "Score adverse : "
         }
 
         alertdialogView.show()

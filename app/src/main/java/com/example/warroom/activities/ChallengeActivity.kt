@@ -85,12 +85,14 @@ class ChallengeActivity: AppCompatActivity(), ChallengeAdapter.ChallengeItemInte
     }
 
     private fun setUpUserViewModelObservers() {
-        userViewModel.userAvailable.observe(this@ChallengeActivity, Observer { isAvailable ->
-            if (isAvailable) {
+        userViewModel.userAvailable.observe(this@ChallengeActivity, Observer { user ->
+            user?.let {
                 this.alertDialogView?.dismiss()
-                val intent = Intent(this, SportChallengeActivity::class.java)
+                val intent = SportChallengeActivity.newIntent(this, it)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                 this.startActivity(intent)
-            } else {
+                finish()
+            } ?: run {
                 Toast.makeText(
                     this,
                     resources.getString(R.string.challenge_form_wrong_pseudo),
