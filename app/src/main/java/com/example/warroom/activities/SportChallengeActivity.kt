@@ -97,6 +97,7 @@ class SportChallengeActivity : AppCompatActivity() {
                             "receiver_score" to receiver_score,
                             "sender_id" to sender_id,
                             "sender_score" to sender_score,
+                            "completed" to false
                         )
 
                         db.collection("challenges")
@@ -261,4 +262,3 @@ class SportChallengeActivity : AppCompatActivity() {
         canvas.drawText(text!!, start, end, x, y + offsetY, paint)
     }
 }
-*/
