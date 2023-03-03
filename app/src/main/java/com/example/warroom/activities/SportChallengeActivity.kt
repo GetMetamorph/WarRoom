@@ -42,9 +42,9 @@ class SportChallengeActivity : AppCompatActivity() {
 
 
     companion object {
-        private var opponentUser: User? = null
-        fun newIntent(context: Context, user: User? = null): Intent {
-            opponentUser = user
+        private var opponentUserId: String? = null
+        fun newIntent(context: Context, userId: String? = null): Intent {
+            opponentUserId = userId
             return Intent(context, SportChallengeActivity::class.java)
         }
     }
@@ -85,7 +85,7 @@ class SportChallengeActivity : AppCompatActivity() {
                         showEndOfChallengeSenderPopUp()
 
                         val name = "Sport Challenge"
-                        val receiver_id = opponentUser?.uid
+                        val receiver_id = opponentUserId
                         val receiver_score = null
                         val sender_id = auth.currentUser?.uid
                         val sender_score = playerScore
@@ -261,4 +261,4 @@ class SportChallengeActivity : AppCompatActivity() {
     ) {
         canvas.drawText(text!!, start, end, x, y + offsetY, paint)
     }
-}
+}*/

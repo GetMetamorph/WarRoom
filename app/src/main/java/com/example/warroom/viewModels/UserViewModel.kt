@@ -13,8 +13,8 @@ import kotlinx.coroutines.launch
 class UserViewModel: ViewModel() {
     private val db = Firebase.firestore
 
-    private var _userAvailable: MutableLiveData<User?> = MutableLiveData()
-    val userAvailable : LiveData<User?> = _userAvailable
+    private var _userAvailable: MutableLiveData<String?> = MutableLiveData()
+    val userAvailable : LiveData<String?> = _userAvailable
 
 
     fun getUserWith(username: String) {
@@ -26,7 +26,8 @@ class UserViewModel: ViewModel() {
                     .addOnSuccessListener { documents ->
                         val doc = documents.first()
                         Log.d("UserDoc","$documents")
-                        _userAvailable.value = doc.toObject(User::class.java)
+
+                        _userAvailable.value = doc.id//doc.toObject(User::class.java)
                         Log.d("UserDoc","$userAvailable")
                     }
                     .addOnFailureListener { exception ->
