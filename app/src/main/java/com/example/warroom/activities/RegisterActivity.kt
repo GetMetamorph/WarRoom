@@ -9,6 +9,7 @@ import com.example.warroom.R
 import com.example.warroom.databinding.ActivityRegisterBinding
 import net.datafaker.Faker
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import dk.brics.automaton.SpecialOperations.trim
@@ -57,19 +58,19 @@ class RegisterActivity : AppCompatActivity() {
 
                             // Create a new user document in Firestore with the UID and other fields
                             val user = hashMapOf(
-                                "uid" to uid,
                                 "username" to username,
                                 "email" to email,
                                 "picture" to faker.avatar().image(),
                             )
 
                         // Sign in success, update UI with the signed-in user's information
-                        //val user = auth.currentUser
-                        // Add a new document with a generated ID
+                        //val user = auth.currentUser val db = FirebaseFirestore.getInstance()
+                            val db = FirebaseFirestore.getInstance()
                         db.collection("users")
-                            .add(user)
-                            .addOnSuccessListener { documentReference ->
-                                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+                            .document(uid)
+                            .set(user)
+                            .addOnSuccessListener {
+                                Log.d(TAG, "DocumentSnapshot added with ID: $uid")
                             }
                             .addOnFailureListener { e ->
                                 Log.w(TAG, "Error adding document", e)
