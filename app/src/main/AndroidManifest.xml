@@ -52,9 +52,13 @@
         <activity
             android:name=".activities.SportChallengeActivity"
             android:exported="true"/>
-            
+
         <activity
             android:name=".activities.HomeActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".activities.ProfileActivity"
             android:exported="true"/>
     </application>
 
