@@ -59,8 +59,6 @@ class LoginActivity : AppCompatActivity() {
                         binding.alertMessage.text = "Connexion échouée"
                     }
                 }
-
-
         }
     }
 }
